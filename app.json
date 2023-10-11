@@ -5,6 +5,20 @@
       "@config-plugins/react-native-pdf"
     ],
     "name": "mobile-app",
-    "slug": "mobile-app"
+    "slug": "mobile-app",
+    "android": {
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ],
+      "package": "dev.webbe.pdfeditor"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "48fbcefe-5951-41e0-913f-58224b1edc92"
+      }
+    }
   }
 }
